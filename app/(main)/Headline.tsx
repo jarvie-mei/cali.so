@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
 import { SparkleIcon, UserSecurityIcon } from '~/assets'
-import { PeekabooLink } from '~/components/links/PeekabooLink'
+// import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
@@ -40,11 +40,11 @@ function OCD() {
   )
 }
 
-function Founder() {
+function Hacker() {
   return (
     <span className="group inline-flex items-center">
       <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>创始人</span>
+      <span>漏洞分析</span>
     </span>
   )
 }
@@ -65,7 +65,7 @@ export function Headline() {
       >
         <Developer />，<Designer />，
         <span className="block h-2" />
-        <OCD />，<Founder />
+        <OCD />，<Hacker />
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
@@ -80,10 +80,10 @@ export function Headline() {
         }}
       >
         <Balancer>
-          我是 Cali，
-          <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink>
-          创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
-          我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
+          我是 MJ，专注于linux开发，漏洞分析
+          {/* <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink> */}
+          {/* 创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
+          我热爱开发，设计，创新，享受生活，以及在未知领域中探索。 */}
         </Balancer>
       </motion.p>
       <motion.div
@@ -99,33 +99,33 @@ export function Headline() {
         }}
       >
         <SocialLink
-          href="https://cali.so/twitter"
+          href="https://hack.mjtech.cc/twitter"
           aria-label="我的推特"
           platform="twitter"
         />
         <SocialLink
-          href="https://cali.so/youtube"
+          href="https://hack.mjtech.cc/youtube"
           aria-label="我的 YouTube"
           platform="youtube"
         />
         <SocialLink
-          href="https://cali.so/bilibili"
+          href="https://hack.mjtech.cc/bilibili"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
         <SocialLink
-          href="https://cali.so/github"
+          href="https://hack.mjtech.cc/github"
           aria-label="我的 GitHub"
           platform="github"
         />
         <SocialLink
-          href="https://cali.so/tg"
+          href="https://hack.mjtech.cc/tg"
           aria-label="我的 Telegram"
           platform="telegram"
         />
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
-          href="mailto:hi@cali.so"
+          href="mailto:jzm817@mjtech.cc"
           aria-label="我的邮箱"
           platform="mail"
         />
